@@ -4,15 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTF Challenge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            color: #5a5a5a;
+        }
+        .hidden-flag {
+            display: none; /* This CSS rule hides the flag */
+        }
+        .hint {
+            background-color: #e7f7ff;
+            border-left: 4px solid #4a90e2;
+            padding: 10px;
+            margin: 20px 0;
+        }
+        .alert {
+            color: #d9534f;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to the CTF Challenge!</h1>
-    <p>Find the hidden flag using inspect element!</p>
+    <p>Can you find the hidden treasure? It requires keen observation!</p>
+    <p>Explore the page and look for clues. The treasure is hidden in plain sight but not easily found.</p>
 
-    <!-- Hidden flag in a comment -->
-    <!-- FLAG{sherlock} -->
+    <div class="hint">
+        <p>🕵️‍♂️ <strong>Hint:</strong> Sometimes the most valuable information is tucked away where you least expect it.</p>
+    </div>
 
-    <!-- Hidden flag using CSS -->
-    <p style="display:none;">FLAG{sherlock}</p>
+    <p class="alert">⚠️ Remember, this is a challenge! Don't give up too easily!</p>
+
+    <!-- Hidden flag in a comment (not obvious) -->
+    <!-- You might want to check the <script> section for some clues -->
+
+    <script>
+        // The flag is also stored in a variable (but hidden)
+        var hiddenFlag = "FLAG{sherlock}"; // This is not directly visible on the page.
+        console.log("For debugging: ", hiddenFlag); // This will show the flag in the console (for advanced users)
+    </script>
+
+    <p class="hidden-flag">FLAG{sherlock}</p> <!-- This flag is hidden in CSS -->
 </body>
 </html>
+
