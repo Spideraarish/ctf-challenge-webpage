@@ -1,5 +1,66 @@
-/* Hide the flag using CSS with a pseudo-element */
+/* Distracting styles */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+}
+
+.fake-flag {
+    color: red;
+    font-weight: bold;
+}
+
+
+div::after {
+    content: "FLAG{just_a_fake_flag}";
+    color: transparent;
+}
+
+h1::before {
+    content: "Try harder...";
+    display: block;
+    color: grey;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+
 body::before {
     content: "FLAG{sherlock}";
-    visibility: hidden; /* Hides the flag from being visible */
+    visibility: hidden;
+    position: absolute;
+    top: -9999px; /* Moves it off-screen */
+    left: -9999px;
+}
+
+/* Random styles to distract */
+.random-class {
+    color: blue;
+    background-color: yellow;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 10px;
+}
+
+.another-fake-class::before {
+    content: "This is not a flag!";
+    color: green;
+    display: block;
+    font-style: italic;
+}
+
+/* More distraction */
+.hidden-message {
+    display: none;
 }
