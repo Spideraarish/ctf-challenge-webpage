@@ -1,0 +1,5 @@
+/* Hide the flag using CSS with a pseudo-element */
+body::before {
+    content: "FLAG{sherlock}";
+    visibility: hidden; /* Hides the flag from being visible */
+}
