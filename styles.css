@@ -39,11 +39,11 @@ body::before {
     content: "FLAG{sherlock}";
     visibility: hidden;
     position: absolute;
-    top: -9999px; /* Moves it off-screen */
+    top: -9999px; 
     left: -9999px;
 }
 
-/* Random styles to distract */
+
 .random-class {
     color: blue;
     background-color: yellow;
@@ -60,7 +60,7 @@ body::before {
     font-style: italic;
 }
 
-/* More distraction */
+
 .hidden-message {
     display: none;
 }
