@@ -36,7 +36,7 @@ h1::before {
 
 
 body::before {
-    content: "FLAG{sherlock}";
+    content: "FLAG: SHADOW_SOURCE_X13";
     visibility: hidden;
     position: absolute;
     top: -9999px; 
