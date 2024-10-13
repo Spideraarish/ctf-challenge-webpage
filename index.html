@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTF Challenge</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,9 +24,6 @@
         .fake-flag {
             color: red;
         }
-        .hidden-flag {
-            display: none;
-        }
     </style>
 </head>
 <body>
@@ -34,28 +32,14 @@
         <p>Welcome to the challenge! There might be a flag hidden on this page. Or is there?</p>
 
         <!-- Misleading fake flag -->
-        <p class="fake-flag">FLAG{not_the_right_flag}</p>
+        <p class="fake-flag">FLAG{wrong_flag}</p>
 
         <p>Keep searching! Sometimes, clues are hidden deeper than expected. 🤔</p>
     </div>
 
-    <!-- The actual flag (split into two parts and hidden in plain sight) -->
-    <div style="visibility: hidden;">FLAG{part1_</div>
-    <div style="visibility: hidden;">sherlock}</div>
-
     <script>
-        // JavaScript trick to obfuscate the flag
-        const flagPart1 = "FLAG{part1_";
-        const flagPart2 = "sherlock}";
-        console.log(flagPart1 + flagPart2);  // Outputs the flag in the console
-
-        // Encode the flag in base64 and hide it in an array
-        const encodedFlag = btoa("FLAG{sherlock}");
-        console.log("Clue: The flag is hidden somewhere in base64: " + encodedFlag);
-        
-        // Decoding the flag using JavaScript (can be inspected)
-        var decodedFlag = atob(encodedFlag);
-        // Don't give away the flag directly in the HTML, let them inspect
+        // Fake console clue to divert attention
+        console.log("Keep looking, the flag isn't here!");
     </script>
 </body>
 </html>
